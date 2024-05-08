@@ -10,7 +10,53 @@
 </head>
 
 <body>
-
+    <!-- Navbar -->
+    <nav class="p-3 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-12 max-h-12" src="./assets/logo.png" alt="Logo">
+            <span class="text-lg font-medium font-display">Hilltop Academy</span>
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-medium hover:text-primary">Home</a>
+            <a href="#" class="font-medium hover:text-primary">Gallery</a>
+            <a href="#" class="font-medium hover:text-primary">Cources</a>
+            <a href="#" class="font-medium hover:text-primary">Contacts</a>
+            <a href="#" class="font-medium hover:text-primary">About</a>
+        </div>
+        <button
+            class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+            <span>Apply Online!!</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+        <div id="nav-dialog" class="hidden fixed z-10 lg:hidden inset-0 bg-white p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-12 max-h-12" src="./assets/logo.png" alt="Logo">
+                    <span class="text-lg font-medium font-display">Hilltop Academy</span>
+                </a>
+                <button class="p-2 lg:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cources</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
+            </div>
+            <div class="h-[1px] bg-gray-300">
+                <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
+                    <span>Apply Online!!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 </body>
+<script src="script.js"></script>
 
 </html>

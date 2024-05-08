@@ -1,0 +1,12 @@
+**Git Used commands during this project**
+
+_Follow camelCase convection for naming file or folder._
+
+Basic git commands:
+git pull origin main                    //to pull
+git branch branchName                   //create new local branch
+git checkout branchName                 //to switch the branch
+git pull origin main                    //to pull the main branch
+git add .                               //add all files to local git file
+git commit -m "update: readme file"     //commit to change made with msg
+git push -u origin branchName           //push to github
