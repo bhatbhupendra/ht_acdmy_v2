@@ -1,0 +1,22 @@
+{
+  "name": "ht_acdmy_v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhatbhupendra/ht_acdmy_v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhatbhupendra/ht_acdmy_v2/issues"
+  },
+  "homepage": "https://github.com/bhatbhupendra/ht_acdmy_v2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
