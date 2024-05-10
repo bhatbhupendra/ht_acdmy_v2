@@ -11,17 +11,17 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 px-16 flex bg-white justify-between items-center">
         <a href="#" id="brand" class="flex gap-2 items-center">
-            <img class="object-cover max-w-12 max-h-12" src="./assets/logo.png" alt="Logo">
+            <img class="object-cover max-w-32 max-h-32" src="./assets/logo.png" alt="Logo">
             <span class="text-lg font-medium font-display">Hilltop Academy</span>
         </a>
         <div id="nav-menu" class="hidden lg:flex gap-12">
-            <a href="#" class="font-medium hover:text-primary">Home</a>
-            <a href="#" class="font-medium hover:text-primary">Gallery</a>
-            <a href="#" class="font-medium hover:text-primary">Cources</a>
-            <a href="#" class="font-medium hover:text-primary">Contacts</a>
-            <a href="#" class="font-medium hover:text-primary">About</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Home</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Gallery</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Cources</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Contacts</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">About</a>
         </div>
         <button
             class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
@@ -56,6 +56,40 @@
             </div>
         </div>
     </nav>
+    <!-- footer -->
+    <footer class="font-display px-10 py-4 bg-footer_bg flex items-center flex-col lg:flex-row justify-around">
+        <aside class="flex flex-col items-center">
+            <img class="object-cover max-w-48 max-h-48" src="./assets/logo.png" alt="Logo">
+            <span class="text-2xl font-semibold">Hilltop Academy</span>
+            <i>"Knowladge is the Power"</i>
+            <span>Estd: 2078</span>
+            <div class="min-w-28 flex justify-around">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </aside>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium">Contact</h1>
+            <span>Durgathali-2, Bajhang, Nepal</span>
+            <span>Email:- hilltop-academy@outlook.com</span>
+            <span>Phone:- +9779814637756</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium">Principal</h1>
+            <span>Janak Dhami</span>
+            <span>janakdhamieg@gmail.com</span>
+            <span>+977-9863943736</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium">Links</h1>
+            <a href="" class="hover:underline">About us</a>
+            <a href="" class="hover:underline">Contact</a>
+            <a href="" class="hover:underline">Gallery</a>
+            <a href="" class="hover:underline">Sevices</a>
+        </nav>
+    </footer>
 </body>
 <script src="script.js"></script>
 
