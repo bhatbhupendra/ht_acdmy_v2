@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac02b855cd.js" crossorigin="anonymous"></script>
+    <title>Hilltop Academy</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="p-3 px-16 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-32 max-h-32" src="./assets/logo.png" alt="Logo">
+            <span class="text-lg font-medium font-display">Hilltop Academy</span>
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-semibold text-base hover:text-primary">Home</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Gallery</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Cources</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Contacts</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">About</a>
+        </div>
+        <button
+            class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+            <span>Apply Online!!</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+        <div id="nav-dialog" class="hidden fixed z-10 lg:hidden inset-0 bg-white p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-12 max-h-12" src="./assets/logo.png" alt="Logo">
+                    <span class="text-lg font-medium font-display">Hilltop Academy</span>
+                </a>
+                <button class="p-2 lg:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cources</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
+            </div>
+            <div class="h-[1px] bg-gray-300">
+                <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
+                    <span>Apply Online!!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex flex-col justify-center items-center">
+        <img class="object-cover max-w-80 max-h-80" src="./assets/logo.png" alt="Logo">
+        <div class="mt-5">
+            <ul class="flex flex-col items-center">
+                <li>
+                    <h1 class="text-4xl font-semibold font-display">Hilltop Academy</h1>
+                </li>
+                <li>Durgathali-2, Bajhang, Nepal</li>
+                <li>Phone: +977-9814637756</li>
+                <li>Website: <a class="hover:underline"
+                        href="https://www.hilltopacademy2077.com/">hilltopacademy2077.edu.np</a>
+                </li>
+                <li>Email: hilltop-academy@outlook.com</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="flex flex-col items-center mt-10">
+        <div  class="flex flex-col items-center w-3/4">
+            <h1 class="text-3xl font-display font-semibold">
+                Get In <span class="text-green-600">Touch</span>
+            </h1>
+            <p class="text-center">
+Please don't hesitate to get in touch with us via phone, email, or the contact form on our website. we're here to help with any questions or concerns you may have.</p>
+        </div>
+        <div class="flex mt-8">
+            <div class="flex flex-col items-center px-5">
+                <a href="" class="text-logo_blue text-3xl bg-blue-100 w-16 h-16 rounded-full flex justify-center items-center"><i class="fa-solid fa-location-dot"></i></a>
+                <span class="mt-3">Durgathali-2, Bajhang, Nepal</span>
+            </div>
+            <div class="flex flex-col items-center px-5">
+                <a href="" class="text-logo_blue text-3xl bg-blue-100 w-16 h-16 rounded-full flex justify-center items-center"><i class="fa-solid fa-envelope"></i></a>
+                <span class="mt-3">hilltop-academy@outlook.com</span>
+            </div>
+            <div class="flex flex-col items-center px-5">
+                <a href="" class="text-logo_blue text-3xl bg-blue-100 w-16 h-16 rounded-full flex justify-center items-center"><i class="fa-solid fa-phone-volume"></i></a>
+                <span class="mt-3">+977-9814637756</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-row justify-around items-center py-10">
+        <div class="flex flex-1 justify-center">
+            <div class="mx-5 w-3/4">
+                <span class="text-lg font-semibold text-gray-700">Fill the form for inquary about Hilltop Academy.</span>
+                <form class="mt-8 space-y-6" action="#" method="POST">
+                    <div class="flex space-x-4">
+                        <div class="w-1/2">
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input id="name" name="name" type="text" required
+                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="w-1/2">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input id="email" name="email" type="email" required
+                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                        <input id="subject" name="subject" type="text" required
+                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            placeholder="Subject">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                placeholder="Your Message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-logo_blue hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transform duration-300">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <iframe
+            class="flex-1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.6474726390525!2d81.03834501440905!3d29.497481051158882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a3e902eeb7df3d%3A0x2d263014c49f02b1!2sHILLTOP%20ACADEMY!5e0!3m2!1sen!2snp!4v1631942416605!5m2!1sen!2snp"
+            width="97%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    
+    <!-- footer -->
+    <footer class="font-display px-10 py-4 bg-footer_bg flex items-center flex-col lg:flex-row justify-around">
+        <aside class="flex flex-col items-center text-blueish_dark">
+            <img class="object-cover max-w-48 max-h-48" src="./assets/logo.png" alt="Logo">
+            <span class="text-2xl font-semibold">Hilltop Academy</span>
+            <i>"Knowladge is the Power"</i>
+            <span>Estd: 2078</span>
+            <div class="min-w-28 flex justify-around text-slate-400 text-sm">
+                <a href="" class="hover:text-blue-700"><i class="fa-brands fa-facebook "></i></a>
+                <a href="" class="hover:text-pink-700"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="hover:text-red-700"><i class="fa-brands fa-youtube"></i></a>
+                <a href="" class="hover:text-blue-950"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </aside>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Contact</h1>
+            <span>Durgathali-2, Bajhang, Nepal</span>
+            <span>Email:- hilltop-academy@outlook.com</span>
+            <span>Phone:- +9779814637756</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Principal</h1>
+            <span>Janak Dhami</span>
+            <span>janakdhamieg@gmail.com</span>
+            <span>+977-9863943736</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Links</h1>
+            <a href="" class="hover:underline">About us</a>
+            <a href="" class="hover:underline">Contact</a>
+            <a href="" class="hover:underline">Gallery</a>
+            <a href="" class="hover:underline">Sevices</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
