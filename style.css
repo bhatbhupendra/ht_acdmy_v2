@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 .active {
-  @apply  bg-logo_blue text-white 
+  @apply  bg-logo_blue text-white flex items-center
+}
+.unactive{
+  @apply flex items-center
 }
 .listOfNav{
     @apply px-5 py-1 rounded-md cursor-pointer
