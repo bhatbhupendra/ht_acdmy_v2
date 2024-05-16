@@ -58,66 +58,110 @@
     </nav>
 
     <!-- gallary -->
-        <div class="w-full bg-[url(./assets/bg-1.jpg)] h-80 bg-center bg-clip-content flex justify-center items-center">
-            <div>
-                <span class="text-3xl font-bold flex items-center justify-center ">
-                    Photo <span class="text-logo_blue">Gallery.</span>
-                </span>
-                <p class="text-white">Hilltop Preceious Memories are stored for eternity.</p>
-            </div>
+    <div
+        class="w-full bg-[url(./assets/memories-bg.jpg)] h-60 bg bg-center bg-cover bg-clip-content flex justify-center items-center">
+        <div class="flex flex-col items-center">
+            <span class="font-gallaryTitle text-white text-5xl font-extrabold flex items-center justify-center ">
+                Miles of<span class="text-green-600">&nbsp;Memories.</span>
+            </span>
+            <p
+                class="mt-3 px-3 text-white font-display hover:bg-opacity-50 hover:bg-gray-300 transition-all duration-300 border-0 rounded-lg">
+                Hilltop Preceious
+                Memories are
+                stored for beyond
+                eternity.</p>
         </div>
-        <div >
-                <ul class="flex flex-wrap justify-center gap-4 my-6">
-                    <div class="relative inline-flex">
-                        <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 232"><path d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z" fill="#648299" fill-rule="nonzero"/></svg>
-                        <select class="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
-                            <option>Choose a Year</option>
-                            <option>2024</option>
-                            <option>2023</option>
-                            <option>2022</option>
-                            <option>2021</option>
-                            <option>2020</option>
-                        </select>
-                    </div>
-                    <div class="flex flex-row">
-                        <li class="active listOfNav" data-filter="all">All</li>
-                        <li class="listOfNav" data-filter=".festival">Festival</li>
-                        <li class="listOfNav" data-filter=".activities">Activities</li>
-                        <li class="listOfNav" data-filter=".field_visit">Field Visit</li>
-                        <li class="listOfNav" data-filter=".play"></li>
-                    </div>
-                </ul>
-          </div>
-        
-          <div class="flex flex-col items-center">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-                  <div class="w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl transition-all duration-300 border border-gray-200">
-                    <img src="./assets/gallary.jpg" class="">
-                  </div>
-                  <div class="w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl transition-all duration-300 border border-gray-200">
-                    <img src="./assets/gallary.jpg" class="">
-                  </div>
-                  <div class="w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl transition-all duration-300 border border-gray-200">
-                    <img src="./assets/gallary.jpg" class="">
-                  </div>
-                  <div class="w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl transition-all duration-300 border border-gray-200">
-                    <img src="./assets/gallary.jpg" class="">
-                  </div>
-                  <div class="w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl transition-all duration-300 border border-gray-200">
-                    <img src="./assets/gallary.jpg" class="">
-                  </div>
-                  <div class="w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl transition-all duration-300 border border-gray-200">
-                    <img src="./assets/gallary.jpg" class="">
-                  </div>
-                  <div class="w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl transition-all duration-300 border border-gray-200">
-                    <img src="./assets/gallary.jpg" class="">
-                  </div>
-              </div>
-          </div>
+    </div>
+    <div>
+        <ul class="flex flex-wrap justify-center gap-4 my-6">
+            <div class="relative inline-flex">
+                <svg class="w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 412 232">
+                    <path
+                        d="M206 171.144L42.678 7.822c-9.763-9.763-25.592-9.763-35.355 0-9.763 9.764-9.763 25.592 0 35.355l181 181c4.88 4.882 11.279 7.323 17.677 7.323s12.796-2.441 17.678-7.322l181-181c9.763-9.764 9.763-25.592 0-35.355-9.763-9.763-25.592-9.763-35.355 0L206 171.144z"
+                        fill="#648299" fill-rule="nonzero" />
+                </svg>
+                <select
+                    class="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">
+                    <option>Choose a Year</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                </select>
+            </div>
+            <div class="flex flex-row">
+                <li class="active listOfNav" data-filter="all">All</li>
+                <li class="listOfNav" data-filter=".festival">Festival</li>
+                <li class="listOfNav" data-filter=".activities">Activities</li>
+                <li class="listOfNav" data-filter=".field_visit">Field Visit</li>
+                <li class="listOfNav" data-filter=".play"></li>
+            </div>
+        </ul>
+    </div>
 
-        <!-- Footer -->
+    <div class="flex flex-col items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="photoGallary">
+                <div class="relative group">
+                    <img src="./assets/gallary.jpg" class="">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-end opacity-0 bg-black bg-opacity-40 group-hover:opacity-100 transition duration-300">
+                        <span class="text-gray-200 text-sm pl-2 pb-0"><i class="fa-solid fa-hashtag"></i> Educational
+                            Tour</span>
+                        <span class="text-gray-200 text-xs font-normal pl-2 pb-2"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Pokhara, Nepal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photoGallary">
+                <div class="relative group">
+                    <img src="./assets/gallary.jpg" class="">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-end opacity-0 bg-black bg-opacity-40 group-hover:opacity-100 transition duration-300">
+                        <span class="text-gray-200 text-sm pl-2 pb-0"><i class="fa-solid fa-hashtag"></i> Educational
+                            Tour</span>
+                        <span class="text-gray-200 text-xs font-normal pl-2 pb-2"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Pokhara, Nepal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photoGallary">
+                <div class="relative group">
+                    <img src="./assets/gallary.jpg" class="">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-end opacity-0 bg-black bg-opacity-40 group-hover:opacity-100 transition duration-300">
+                        <span class="text-gray-200 text-sm pl-2 pb-0"><i class="fa-solid fa-hashtag"></i> Educational
+                            Tour</span>
+                        <span class="text-gray-200 text-xs font-normal pl-2 pb-2"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Pokhara, Nepal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photoGallary">
+                <div class="relative group">
+                    <img src="./assets/gallary.jpg" class="">
+                    <div
+                        class="absolute inset-0 flex flex-col justify-end opacity-0 bg-black bg-opacity-40 group-hover:opacity-100 transition duration-300">
+                        <span class="text-gray-200 text-sm pl-2 pb-0"><i class="fa-solid fa-hashtag"></i> Educational
+                            Tour</span>
+                        <span class="text-gray-200 text-xs font-normal pl-2 pb-2"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Pokhara, Nepal</span>
+                    </div>
+                </div>
+            </div>
 
-        <!-- footer -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <!-- footer -->
     <footer class="font-display px-10 py-4 bg-footer_bg flex items-center flex-col lg:flex-row justify-around">
         <aside class="flex flex-col items-center text-blueish_dark">
             <img class="object-cover max-w-48 max-h-48" src="./assets/logo.png" alt="Logo">
