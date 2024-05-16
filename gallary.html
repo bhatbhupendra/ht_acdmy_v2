@@ -11,7 +11,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="p-3 px-16 flex bg-white justify-between items-center">
+    <nav class="p-3 px-3 lg:px-16 flex bg-white justify-between items-center">
         <a href="#" id="brand" class="flex gap-2 items-center">
             <img class="object-cover max-w-32 max-h-32" src="./assets/logo.png" alt="Logo">
             <span class="text-lg font-medium font-display">Hilltop Academy</span>
@@ -61,12 +61,12 @@
     <div
         class="w-full bg-[url(./assets/memories-bg.jpg)] h-60 bg bg-center bg-cover bg-clip-content flex justify-center items-center">
         <div class="flex flex-col items-center">
-            <span class="font-gallaryTitle text-white text-lg lg:text-5xl font-extrabold flex items-center justify-center
+            <span class="font-gallaryTitle text-white text-2xl lg:text-5xl font-extrabold flex items-center justify-center
                 ">
-                Miles of<span class="text-red-600">&nbsp;Memories.</span>
+                Miles of<span class="text-green-600">&nbsp;Memories.</span>
             </span>
             <p
-                class="mt-3 px-3 text-white font-display hover:bg-opacity-50 hover:bg-gray-300 transition-all duration-300 border-0 rounded-lg">
+                class="mt-3 px-3 text-white text-center font-display hover:bg-opacity-50 hover:bg-gray-300 transition-all duration-300 border-0 rounded-lg">
                 Hilltop Preceious
                 Memories are
                 stored for beyond
@@ -92,12 +92,12 @@
                     <option>2020</option>
                 </select>
             </div>
-            <div class="flex flex-row">
+            <div class="flex flex-row px-3 lg:px-0">
                 <li class="active listOfNav" data-filter="all">All</li>
-                <li class="listOfNav" data-filter=".festival">Festival</li>
-                <li class="listOfNav" data-filter=".activities">Activities</li>
-                <li class="listOfNav" data-filter=".field_visit">Field Visit</li>
-                <li class="listOfNav" data-filter=".play"></li>
+                <li class="unactive listOfNav" data-filter=".festival">Festival</li>
+                <li class="unactive listOfNav" data-filter=".activities">Activities</li>
+                <li class="unactive listOfNav" data-filter=".field_visit">Visit</li>
+                <li class="unactive listOfNav" data-filter=".other">Other</li>
             </div>
         </ul>
     </div>
