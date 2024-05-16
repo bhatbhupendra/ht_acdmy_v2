@@ -1,5 +1,7 @@
 /* importing memories font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Rock+Salt&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,4 +20,8 @@
 
 .photoGallary{
   @apply w-64 h-64 p-3 bg-cover bg-center hover:shadow-xl border border-gray-200 object-cover transition duration-300 transform hover:scale-105
+}
+
+.photos{
+  @apply  max-h-fit max-w-fit p-3 bg-cover bg-center hover:shadow-xl border border-gray-200 object-cover transition duration-300 transform hover:scale-105
 }
