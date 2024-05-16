@@ -10,12 +10,12 @@ module.exports = {
         logo_blue: "#019de6",
         blueish_dark: "#00234c",
         navbar_color: "#e3e6f3",
-        footer_color:"#041e42"
-        
+        footer_color: "#041e42",
       },
       fontFamily: {
         display: ["Poppins", "sans-serif"],
         body: ["Inter", "sans-serif"],
+        gallaryTitle: ["Rock Salt", "sans-serif"],
       },
     },
   },
