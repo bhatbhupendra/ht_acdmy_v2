@@ -596,6 +596,11 @@ video {
   margin: 1rem;
 }
 
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -609,6 +614,11 @@ video {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .mb-10{
@@ -699,6 +709,14 @@ video {
   height: 1px;
 }
 
+.h-1\/2{
+  height: 50%;
+}
+
+.h-3\/4{
+  height: 75%;
+}
+
 .max-h-12{
   max-height: 3rem;
 }
@@ -711,20 +729,8 @@ video {
   max-height: 12rem;
 }
 
-.max-h-80{
-  max-height: 20rem;
-}
-
 .max-h-60{
   max-height: 15rem;
-}
-
-.max-h-10{
-  max-height: 2.5rem;
-}
-
-.max-h-40{
-  max-height: 10rem;
 }
 
 .min-h-40{
@@ -755,6 +761,10 @@ video {
   width: 100%;
 }
 
+.w-96{
+  width: 24rem;
+}
+
 .min-w-28{
   min-width: 7rem;
 }
@@ -771,24 +781,12 @@ video {
   max-width: 12rem;
 }
 
-.max-w-80{
-  max-width: 20rem;
-}
-
-.max-w-lg{
-  max-width: 32rem;
-}
-
 .max-w-60{
   max-width: 15rem;
 }
 
-.max-w-10{
-  max-width: 2.5rem;
-}
-
-.max-w-40{
-  max-width: 10rem;
+.max-w-lg{
+  max-width: 32rem;
 }
 
 .flex-1{
@@ -984,6 +982,11 @@ video {
      object-fit: cover;
 }
 
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -1003,11 +1006,6 @@ video {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .px-3{
@@ -1045,12 +1043,21 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .pl-16{
@@ -1075,10 +1082,6 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
 }
 
 .text-center{
@@ -1448,9 +1451,9 @@ video {
     margin-right: 8rem;
   }
 
-  .lg\:mx-5{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+  .lg\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .lg\:mr-10{
@@ -1498,22 +1501,22 @@ video {
     padding-right: 0px;
   }
 
-  .lg\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 
-  .lg\:pt-0{
-    padding-top: 0px;
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:pb-0{
     padding-bottom: 0px;
+  }
+
+  .lg\:pt-0{
+    padding-top: 0px;
   }
 
   .lg\:text-3xl{
