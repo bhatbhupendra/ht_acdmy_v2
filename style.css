@@ -13,7 +13,7 @@
   @apply flex items-center
 }
 .listOfNav{
-    @apply px-5 py-1 rounded-md cursor-pointer
+    @apply px-4 lg:px-5 py-1 rounded-md cursor-pointer
 }
 
 .photoGallary{
