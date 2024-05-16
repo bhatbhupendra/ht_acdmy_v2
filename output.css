@@ -715,6 +715,18 @@ video {
   max-height: 20rem;
 }
 
+.max-h-60{
+  max-height: 15rem;
+}
+
+.max-h-10{
+  max-height: 2.5rem;
+}
+
+.max-h-40{
+  max-height: 10rem;
+}
+
 .min-h-40{
   min-height: 10rem;
 }
@@ -765,6 +777,18 @@ video {
 
 .max-w-lg{
   max-width: 32rem;
+}
+
+.max-w-60{
+  max-width: 15rem;
+}
+
+.max-w-10{
+  max-width: 2.5rem;
+}
+
+.max-w-40{
+  max-width: 10rem;
 }
 
 .flex-1{
@@ -1051,6 +1075,10 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .text-center{
@@ -1420,8 +1448,17 @@ video {
     margin-right: 8rem;
   }
 
+  .lg\:mx-5{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .lg\:mr-10{
     margin-right: 2.5rem;
+  }
+
+  .lg\:mt-8{
+    margin-top: 2rem;
   }
 
   .lg\:inline-block{
@@ -1438,6 +1475,10 @@ video {
 
   .lg\:w-2\/3{
     width: 66.666667%;
+  }
+
+  .lg\:w-3\/4{
+    width: 75%;
   }
 
   .lg\:grid-cols-4{
@@ -1460,6 +1501,19 @@ video {
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:pt-0{
+    padding-top: 0px;
+  }
+
+  .lg\:pb-0{
+    padding-bottom: 0px;
   }
 
   .lg\:text-3xl{
