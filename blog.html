@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac02b855cd.js" crossorigin="anonymous"></script>
+    <title>Hilltop Academy</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="p-3 px-3 lg:px-16 flex bg-navbar_color justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-32 max-h-32" src="./assets/logo.png" alt="Logo">
+            <span class="text-lg font-medium font-display">Hilltop Academy</span>
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-semibold text-base hover:text-primary">Home</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Gallery</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Blog</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Cources</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Contacts</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">About</a>
+        </div>
+        <button
+            class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+            <span>Apply Online!!</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+        <div id="nav-dialog" class="hidden fixed z-10 lg:hidden inset-0 bg-white p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-12 max-h-12" src="./assets/logo.png" alt="Logo">
+                    <span class="text-lg font-medium font-display">Hilltop Academy</span>
+                </a>
+                <button class="p-2 lg:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cources</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
+            </div>
+            <div class="h-[1px] bg-gray-300">
+                <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
+                    <span>Apply Online!!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-p1 flex gap-4 mt-4 mb-4">
+        <div class="w-3/4 text-justify ">
+            <h4 class="font-Title font-semibold text-logo_blue">May 17, 2024</h4> 
+            <h2 class="font-Title font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+            <div class="group overflow-hidden my-3">
+                <img class="rounded max-h-fit  transform group-hover:scale-105 transition duration-300" src="assets/bg-3.jpg" alt="">
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id officia fuga eos unde ipsum, 
+                nam quia aut odit saepe, veritatis, mollitia error maiores quasi neque quae! Modi, culpa esse.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quaerat quidem excepturi autem odit quo dolor laborum sed harum, 
+                dicta laboriosam sunt rem nemo numquam reprehenderit distinctio veniam cumque perspiciatis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quas ea aspernatur impedit officia obcaecati tenetur quod veritatis accusamus maxime ipsum est, 
+                dolor esse vel consequatur pariatur exercitationem ad iste.
+            </p>
+        
+        </div>
+        <div>
+            <div class="relative">
+                <input type="text" class="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Search...">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i class="fas fa-search text-gray-500"></i>
+                </div>
+            </div>
+            <h1 class="font-display font-semibold text-gray-700  py-4 ">
+                RECENT POST 
+            </h1>
+            <div class=" flex gap-4 mb-4">
+                <img class=" max-h-20 max-w-28 rounded-md" src="assets/cat-2.jpg" alt="">
+                <div class="font-Title text-justify">
+                    <h4>I have uploded a photo related Hilltop Academy </h4>
+                    <h2 class="text-logo_blue font-medium">May 17, 2024</h2>   
+                </div>
+            </div>
+
+            <div class=" flex gap-4 mb-4">
+                <img class=" max-h-20 max-w-28 rounded-md" src="assets/cat-3.jpg" alt="">
+                <div class="font-Title text-justify">
+                    <h4>I have uploded a photo related Hilltop Academy </h4>
+                    <h2 class="text-logo_blue font-medium">May 17, 2024</h2>   
+                </div>
+            </div>
+
+             <div class=" flex gap-4 mb-4">
+                <img class=" max-h-20 max-w-28 rounded-md" src="assets/bg-2.jpg" alt="">
+                <div class="font-Title text-justify">
+                    <h4>I have uploded a photo related Hilltop Academy </h4>
+                    <h2 class="text-logo_blue font-medium">May 17, 2024</h2>   
+                </div>
+            </div> <div class=" flex gap-4 mb-4">
+                <img class=" max-h-20 max-w-28 rounded-md" src="assets/bg-1.jpg" alt="">
+                <div class="font-Title text-justify">
+                    <h4>I have uploded a photo related Hilltop Academy </h4>
+                    <h2 class="text-logo_blue font-medium">May 17, 2024</h2>   
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <h1 class="font-display font-semibold text-gray-700">TAG CLOUD</h1>
+            </div>
+            <div class=" flex flex-wrap gap-2">
+            <div class="pl-3 pr-3 py-2 mt-4 border-2 border-solid w-fit border-logo_blue rounded">
+                <div class=" pl-3 pr-3 flex items-center cursor-pointer">
+                    <span class="text-logo_blue ">Design</span>
+                </div>
+            </div>
+
+            <div class="pl-3 pr-3 py-2 mt-4 border-2 border-solid w-fit border-logo_blue rounded">
+                <div class=" pl-3 pr-3 flex items-center cursor-pointer">
+                    <span class="text-logo_blue">Development</span>
+                </div>
+            </div>
+
+            <div class="pl-3 pr-3 py-2 mt-4 border-2 border-solid w-fit border-logo_blue rounded">
+                <div class=" pl-3 pr-3 flex items-center cursor-pointer">
+                    <span class="text-logo_blue ">Marketing</span>
+                </div>
+            </div>
+
+            <div class="pl-3 pr-3 py-2 mt-4 border-2 border-solid w-fit border-logo_blue rounded">
+                <div class=" pl-3 pr-3 flex items-center cursor-pointer">
+                    <span class="text-logo_blue ">SEO</span>
+                </div>
+            </div>
+
+            <div class="pl-3 pr-3 py-2 mt-4 border-2 border-solid w-fit border-logo_blue rounded">
+                <div class=" pl-3 pr-3 flex items-center cursor-pointer">
+                    <span class="text-logo_blue ">Writing</span>
+                </div>
+            </div>
+
+            <div class="pl-3 pr-3 py-2 mt-4 border-2 border-solid w-fit border-logo_blue rounded">
+                <div class=" pl-3 pr-3 flex items-center cursor-pointer">
+                    <span class="text-logo_blue ">Consulting</span>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+   
+
+    <!-- footer -->
+    <footer class="font-display px-10 py-4 bg-footer_bg flex items-center flex-col lg:flex-row justify-around">
+        <aside class="flex flex-col items-center text-blueish_dark">
+            <img class="object-cover max-w-48 max-h-48" src="./assets/logo.png" alt="Logo">
+            <span class="text-2xl font-semibold">Hilltop Academy</span>
+            <i>"Knowladge is the Power"</i>
+            <span>Estd: 2078</span>
+            <div class="min-w-28 flex justify-around text-slate-400 text-sm">
+                <a href="" class="hover:text-blue-700"><i class="fa-brands fa-facebook "></i></a>
+                <a href="" class="hover:text-pink-700"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="hover:text-red-700"><i class="fa-brands fa-youtube"></i></a>
+                <a href="" class="hover:text-blue-950"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </aside>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Contact</h1>
+            <span>Durgathali-2, Bajhang, Nepal</span>
+            <span>Email:- hilltop-academy@outlook.com</span>
+            <span>Phone:- +9779814637756</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Principal</h1>
+            <span>Janak Dhami</span>
+            <span>janakdhamieg@gmail.com</span>
+            <span>+977-9863943736</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Links</h1>
+            <a href="" class="hover:underline">About us</a>
+            <a href="" class="hover:underline">Contact</a>
+            <a href="" class="hover:underline">Gallery</a>
+            <a href="" class="hover:underline">Sevices</a>
+        </nav>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
