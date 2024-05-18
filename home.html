@@ -92,10 +92,10 @@
     </div>
 
     <!-- video section -->
-    <section class="px-36 mt-5">
-        <div class="relative h-[70vh] bg-center flex items-center" style="background-image: url(./assets/school-img.jpg)">
+    <section class="px-3 lg:px-36 mt-5">
+        <div class="relative lg:h-[70vh] bg-center flex flex-col lg:flex-row items-center" style="background-image: url(./assets/school-img.jpg)">
             <div class="absolute z-0 inset-0 bg-gray-800 opacity-80"></div>
-            <div class="z-10 text-white ml-14 mr-8ml-8 p-8 w-1/2">
+            <div class="z-10 text-white lg:ml-14 mr-8ml-8 p-3 lg:p-8 lg:w-1/2">
                 <span class="text-sm">Our Presentaion is for you</span>
                 <br class="hidden lg:inline-block">
                 <h1 class="title-font sm:text-3xl text-2xl mb-4 font-medium text-white">Watch this video to learn more
@@ -110,19 +110,23 @@
                 <p class="text-justify text-sm">This way, you can control the stacking order of your elements precisely
                      as per your design requirements using Tailwind CSS.
                 </p>
-                <button
-                    class="mt-5 lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 hover:bg-green-600 hover:text-white transition-all duration-500">
+                <button class="hidden lg:flex gap-2 items-center border border-gray-400 mt-5 px-6 py-2 rounded-lg hover:border-gray-600 hover:bg-green-600 hover:text-white transition-all duration-500">
                     <span class="">View more in Gallary</span>
                 </button>
             </div>
-            <div class="z-10 mr-14 ml-8 w-1/2">
-                <video class="" autoplay muted loop src="./assets/drone.MP4" alt="Sample Image"></video>
+            <div class="z-10 p-3 lg:mr-14 lg:ml-8 lg:w-1/2">
+                <video class="" autoplay muted loop src="./assets/videos/drone-intro.mp4" alt="Sample Image"></video>
                 <div class="bg-gray-100 h-10 text-lg font-medium flex justify-center items-center">
                     <span>
                         <i class="fa-regular fa-circle-play text-xl"></i>
                         Hilltop Academy Drone View
                     </span>
                 </div>
+                <button
+                    class="mt-5 flex lg:hidden gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 bg-green-600 text-white transition-all duration-500">
+                    <span class="">View more in Gallary!!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
     </section>
