@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./home.html", "./gallary.html","./blog.html", "./contact.html", "./about.html"],
+  content: [
+    "./home.html",
+    "./gallary.html",
+    "./blog.html",
+    "./contact.html",
+    "./about.html",
+  ],
   theme: {
     extend: {
       colors: {
@@ -13,7 +19,7 @@ module.exports = {
         footer_color: "#041e42",
       },
       fontFamily: {
-        Title:["Roboto"],
+        Title: ["Roboto"],
         display: ["Poppins", "sans-serif"],
         body: ["Inter", "sans-serif"],
         gallaryTitle: ["Rock Salt", "sans-serif"],
