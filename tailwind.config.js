@@ -17,6 +17,7 @@ module.exports = {
         blueish_dark: "#00234c",
         navbar_color: "#e3e6f3",
         footer_color: "#041e42",
+        pink_color: "#ff5e57",
       },
       fontFamily: {
         Title: ["Roboto"],
