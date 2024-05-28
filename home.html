@@ -11,23 +11,25 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="p-3 px-3 lg:px-16 flex bg-white justify-between items-center">
+    <nav class="p-2 px-3 lg:px-16 flex bg-navbar_color bg-opacity-95 justify-between items-center sticky top-0 z-50">
         <a href="#" id="brand" class="flex gap-2 items-center">
-            <img class="object-cover max-w-32 max-h-32" src="./assets/logo.png" alt="Logo">
+            <img class="object-cover max-w-28 max-h-28" src="./assets/logo.png" alt="Logo">
             <span class="text-lg font-medium font-display">Hilltop Academy</span>
         </a>
         <div id="nav-menu" class="hidden lg:flex gap-12">
-            <a href="#" class="font-semibold text-base hover:text-primary">Home</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">Gallery</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">Cources</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">Contacts</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">About</a>
+            <a href="home.html" class="font-semibold text-base hover:text-primary">Home</a>
+            <a href="gallary.html" class="font-semibold text-base hover:text-primary">Gallery</a>
+            <a href="blog.html" class="font-semibold text-base hover:text-primary">Blog</a>
+            <a href="contact.html" class="font-semibold text-base hover:text-primary">Contacts</a>
+            <a href="about.html" class="font-semibold text-base hover:text-primary">About</a>
         </div>
-        <button
-            class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-            <span>Apply Online!!</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <a href="form.html">
+            <button
+                class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <span>Apply Online!!</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a>
         <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
@@ -42,17 +44,19 @@
                 </button>
             </div>
             <div>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cources</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
+                <a href="home.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+                <a href="gallary.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
+                <a href="blog.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blog</a>
+                <a href="contact.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
+                <a href="about.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
             </div>
             <div class="h-[1px] bg-gray-300">
-                <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
-                    <span>Apply Online!!</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                <a href="form.html">
+                    <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
+                        <span>Apply Online!!</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
@@ -60,7 +64,7 @@
         <div class="p-8 ml-0 xl:ml-10 max-w-lg min-h-40 bg-white border-0 rounded-xl flex flex-col items-center opacity-85 hover:opacity-90 transition-all duration-200"
             href="#">
             <div class="">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Knowladge is the
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Knowledge is the
                     <br class="hidden lg:inline-block">
                     <span class="text-green-600">
                         Power.
@@ -69,11 +73,13 @@
                 <p class="mt-2 text-gray-600">"Education is the most powerful weapon which you can use to change the
                     world."
                 </p>
-                <button
-                    class="mt-5 lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 hover:bg-green-600 hover:text-white transition-all duration-500">
-                    <span class="">Apply Now!!</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                <a href="form.html">
+                    <button
+                        class="mt-5 lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 hover:bg-green-600 hover:text-white transition-all duration-500">
+                        <span class="">Apply Now!!</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -93,7 +99,8 @@
 
     <!-- video section -->
     <section class="px-3 lg:px-36 mt-5">
-        <div class="relative lg:h-[70vh] bg-center flex flex-col lg:flex-row items-center" style="background-image: url(./assets/school-img.jpg)">
+        <div class="relative lg:h-[70vh] bg-center flex flex-col lg:flex-row items-center"
+            style="background-image: url(./assets/school-img.jpg)">
             <div class="absolute z-0 inset-0 bg-gray-800 opacity-80"></div>
             <div class="z-10 text-white lg:ml-14 mr-8ml-8 p-3 lg:p-8 lg:w-1/2">
                 <span class="text-sm">Our Presentaion is for you</span>
@@ -102,15 +109,18 @@
                     <br class="hidden lg:inline-block">
                     <span class="text-green-600">about Hilltop Academy.</span>
                 </h1>
-                <p class="text-justify text-sm"> As your Principal, it is important to me that everyone who steps through
-                     our doors: students, parents, and teachers are excited to be here! This attitude enables us to meet the
-                      challenges of academic excellence in a positive, fun, and nurturing way.
+                <p class="text-justify text-sm"> As your Principal, it is important to me that everyone who steps
+                    through
+                    our doors: students, parents, and teachers are excited to be here! This attitude enables us to meet
+                    the
+                    challenges of academic excellence in a positive, fun, and nurturing way.
                 </p>
                 <br class="hidden lg:inline-block">
                 <p class="text-justify text-sm">This way, you can control the stacking order of your elements precisely
-                     as per your design requirements using Tailwind CSS.
+                    as per your design requirements using Tailwind CSS.
                 </p>
-                <button class="hidden lg:flex gap-2 items-center border border-gray-400 mt-5 px-6 py-2 rounded-lg hover:border-gray-600 hover:bg-green-600 hover:text-white transition-all duration-500">
+                <button
+                    class="hidden lg:flex gap-2 items-center border border-gray-400 mt-5 px-6 py-2 rounded-lg hover:border-gray-600 hover:bg-green-600 hover:text-white transition-all duration-500">
                     <span class="">View more in Gallary</span>
                 </button>
             </div>
@@ -122,11 +132,13 @@
                         Hilltop Academy Drone View
                     </span>
                 </div>
-                <button
-                    class="mt-5 flex lg:hidden gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 bg-green-600 text-white transition-all duration-500">
-                    <span class="">View more in Gallary!!</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                <a href="gallary.html">
+                    <button
+                        class="mt-5 flex lg:hidden gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 bg-green-600 text-white transition-all duration-500">
+                        <span class="">View more in Gallary!!</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -138,11 +150,12 @@
             <!-- Principal info -->
             <div class="p-5 lg:mr-10 mt-5 w-60 flex flex-col items-center border-0 rounded-xl bg-card_bg hover:shadow-xl
                 transition-all duration-300">
-                <img src="assets/profile.jpg" class="h-28 border-0 rounded-full" alt="Principal Profile Picture">
+                <img src="assets/staffs/janak-dhami.jpg" class="h-28 border-0 rounded-full"
+                    alt="Principal Profile Picture">
                 <h1 class="text-xl font-bold text-center text-blueish_dark">Janak Dhami</h1>
                 <h2 class="text-sm font-semibold text-center text-blueish_dark">Principal</h2>
-                <p class="text-sm leading-6 text-gray-700 text-justify">Boot camps have its supporters and supporters
-                    its detractors .
+                <p class="text-sm leading-6 text-gray-700 text-center">"A visionary leader whose dedication to education
+                    inspires us all."
                 </p>
                 <div class="mt-1 w-full flex justify-around text-slate-400 text-sm">
                     <a href="" class="hover:text-blue-700"><i class="fa-brands fa-facebook "></i></a>
@@ -174,46 +187,112 @@
     </div>
     <!-- crouser -->
 
+    <!-- blog section -->
+    <div class="mt-10 mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0 relative z-1 border rounded-md" bis_skin_checked="1">
+        <div class="flex flex-wrap gap-x-7.5 gap-y-9" bis_skin_checked="1">
+            <div class="max-w-[1170px] w-full flex flex-col lg:flex-row lg:items-center gap-7.5 lg:gap-11 bg-white shadow-1 rounded-xl p-4 lg:p-3"
+                bis_skin_checked="1">
+                <div class="lg:max-w-[536px] w-full overflow-hidden" bis_skin_checked="1">
+                    <a href="blog.html">
+                        <img class="w-full hover:scale-105 transform duration-500" src="./assets/school-img-wide.jpg"
+                            alt="hero">
+                    </a>
+                </div>
+                <div class="lg:max-w-[540px] w-full" bis_skin_checked="1">
+                    <a href="blog.html"
+                        class="inline-flex text bg-gray-100 font-medium text-sm py-1 px-3 rounded-full mb-4">
+                        Culture
+                    </a>
+                    <a href="blog.html"
+                        class="inline-flex text bg-gray-100 font-medium text-sm py-1 px-3 rounded-full mb-4">
+                        Nature
+                    </a>
+                    <a href="blog.html"
+                        class="inline-flex text bg-gray-100 font-medium text-sm py-1 px-3 rounded-full mb-4">
+                        Explore
+                    </a>
+                    <h1 class="font-bold text-3xl text-gray-900 text-dark mb-4">
+                        <a href="blog.html">
+                            Beyond the Classroom: Exploring Nature Life and Culture
+                        </a>
+                    </h1>
+                    <p class="max-w-[524px]">
+                        Beyond the Classroom, where we delve into the vibrant tapestry of experiences that make up our
+                        school's unique culture...
+                    </p>
+                    <div class="flex flex-col gap-2.5 mt-5" bis_skin_checked="1">
+                        <div href="" class="flex items-center gap-3">
+                            <div class="flex w-6 h-6 rounded-full overflow-hidden" bis_skin_checked="1">
+                                <img src="./assets/user-profile.png" alt="user">
+                            </div>
+                            <p class="text-sm">Suresh Dhami</p>
+                            <p class="text-sm"><i class="fa-regular fa-clock"></i> Sep 10, 2025</p>
+                        </div>
+                        <a href="blog.html">
+                            <button
+                                class="mt-5 flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 bg-green-600 text-white transition-all duration-500">
+                                <span class="">View in Blog</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- services -->
-    <div class="mt-5 px-16 flex flex-col justify-center items-center">
+    <div class="mt-10 mx-auto flex flex-col max-w-[1170px] justify-center items-center">
         <span class="text-lg lg:text-3xl font-semibold">Our Facililites And Focus</span>
-        <div class="grid grid-cols-3 grid-rows-2 gap-3 w-3/4 mt-5">
+        <div class="grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-3 mt-5">
             <div class="col-span-2 bg-red-500 relative group">
-                <div class="overflow-hidden">
-                    <img src="./assets/cat-1.jpg" class="transform group-hover:scale-105 transition duration-300" alt="">
+                <div class="h-full w-full overflow-hidden">
+                    <img src="./assets/cat-1.jpg"
+                        class="h-full w-auto object-cover transform group-hover:scale-105 transition duration-300"
+                        alt="">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end transition duration-300">
-                    <span class="text-gray-200 bg-gray-400 bg-opacity-65 text-base pl-2 pb-0">
+                    <span
+                        class="bg-opacity-65 text-sm lg:text-lg font-normal lg:font-medium text-white bg-gray-300 pl-2 pb-0">
                         New Technology Oriented Learning
                     </span>
                 </div>
             </div>
             <div class="row-span-2 bg-green-600 relative group">
-                <div class="overflow-hidden">
-                    <img src="./assets/cat-4.jpg" class="transform group-hover:scale-105 transition duration-300" alt="">
+                <div class="h-full w-full overflow-hidden">
+                    <img src="./assets/cat-4.jpg"
+                        class="h-full w-auto object-cover transform group-hover:scale-105 transition duration-300"
+                        alt="">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end transition duration-300">
-                    <span class="text-gray-200 bg-gray-400 bg-opacity-65 text-base pl-2 pb-0">
+                    <span
+                        class="bg-opacity-65 text-sm lg:text-lg font-normal lg:font-medium text-white bg-gray-300 pl-2 pb-0">
                         Extra Curriculum Activities
                     </span>
                 </div>
             </div>
             <div class="bg-blue-600 relative group">
-                <div class="overflow-hidden">
-                    <img src="./assets/cat-2.jpg" class="transform group-hover:scale-105 transition duration-300" alt="">
+                <div class="h-full w-full overflow-hidden">
+                    <img src="./assets/cat-2.jpg"
+                        class="h-full w-auto object-cover transform group-hover:scale-105 transition duration-300"
+                        alt="">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end transition duration-300">
-                    <span class="text-gray-200 bg-gray-400 bg-opacity-65 text-base pl-2 pb-0">
+                    <span
+                        class="bg-opacity-65 text-sm lg:text-lg font-normal lg:font-medium text-white bg-gray-300 pl-2 pb-0">
                         Social & Motivational Activities
                     </span>
                 </div>
             </div>
             <div class=" bg-yellow-400 relative group">
-                <div class="overflow-hidden">
-                    <img src="./assets/cat-3.jpg" class="transform group-hover:scale-105 transition duration-300" alt="">
+                <div class="h-full w-full overflow-hidden">
+                    <img src="./assets/cat-3.jpg"
+                        class="h-full w-auto object-cover transform group-hover:scale-105 transition duration-300"
+                        alt="">
                 </div>
                 <div class="absolute inset-0 flex flex-col justify-end transition duration-300">
-                    <span class="text-gray-200 bg-gray-400 bg-opacity-65 text-base pl-2 pb-0">
+                    <span
+                        class="bg-opacity-65 text-sm lg:text-lg font-normal lg:font-medium text-white bg-gray-300 pl-2 pb-0">
                         Group Work
                     </span>
                 </div>
@@ -221,60 +300,70 @@
         </div>
     </div>
 
-    <!-- blog section -->
-    <div class="mt-10 mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0 relative z-1" bis_skin_checked="1">
-        <div class="flex flex-wrap gap-x-7.5 gap-y-9" bis_skin_checked="1">
-            <div class="max-w-[1170px] w-full flex flex-col lg:flex-row lg:items-center gap-7.5 lg:gap-11 bg-white shadow-1 rounded-xl p-4 lg:p-2.5" bis_skin_checked="1">
-                <div class="lg:max-w-[536px] w-full" bis_skin_checked="1">
-                    <a href="blog-single.html">
-                        <img class="w-full" src="./assets/hero-01.png" alt="hero">
-                    </a>
-                </div>
-                <div class="lg:max-w-[540px] w-full" bis_skin_checked="1">
-                    <a href="category.html" class="inline-flex text bg-gray-100 font-medium text-sm py-1 px-3 rounded-full mb-4">Lifestyle</a>
-                    <h1 class="font-bold text-3xl text-gray-900 xl:text-heading-4 text-dark mb-4">
-                        <a href="blog-single.html">
-                            Begin here to obtain a brief summary encompassing all the
-                            essential
-                        </a>
-                    </h1>
-                    <p class="max-w-[524px]">
-                        This comprehensive post serves as your cheat-sheet to swiftly
-                        familiarize yourself with Ghost. Packed with crucial...
-                    </p>
-                    <div class="flex flex-col gap-2.5 mt-5" bis_skin_checked="1">
-                        <div href="" class="flex items-center gap-3">
-                            <div class="flex w-6 h-6 rounded-full overflow-hidden" bis_skin_checked="1">
-                                <img src="./assets/profile.jpg" alt="user">
-                            </div>
-                            <p class="text-sm">Adrio Devid</p>
-                            <p class="text-sm"><i class="fa-regular fa-clock"></i> Sep 10, 2025</p>
+    <!-- why choose section-->
+
+    <section class="mt-10 lg:mx-44">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-5 p-3 border rounded-md">
+            <div class="flex flex-col lg:w-1/2 p-3 lg:p-6 gap-3">
+                <span class="text-green-600 text-lg font-medium underline">why choose us?</span>
+                <h1 class="font-bold text-4xl text-gray-900 text-dark">Why you Should Start Learing
+                    with Us ?</h1>
+                <p class="text-sm">if you're looking for quality, if you're looking for a place where your child is well
+                    taken care of
+                    and you can be assured that they get the best of what you paid for, then KWS is the best place.
+                </p>
+                <div class="flex flex-col gap-3">
+                    <div class="flex flex-row items-center gap-5">
+                        <div class="p-6 bg-gray-100 w-[90px] flex items-center justify-center">
+                            <i class="text-2xl  fa-solid fa-graduation-cap"></i>
                         </div>
-                        <div>
-                            <button
-                                class="mt-5 flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 bg-green-600 text-white transition-all duration-500">
-                                <span class="">View in Blog</span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                        <div class="flex flex-col grow">
+                            <h2 class="text-lg font-semibold underline">Skilled Instructors</h2>
+                            <p>Lorem amet ipsum dolor sit amet, consectetur amet adipisicing amet elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-5">
+                        <div class="p-6 bg-gray-100 w-[90px] flex items-center justify-center">
+                            <i class="text-2xl fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="flex flex-col grow">
+                            <h2 class="text-lg font-semibold underline">Good Environment</h2>
+                            <p>Lorem amet ipsum dolor sit amet, consectetur amet adipisicing amet elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-5">
+                        <div class="p-6 bg-gray-100 w-[90px] flex tems-center justify-center">
+                            <i class="text-2xl fa-solid fa-laptop"></i>
+                        </div>
+                        <div class="flex flex-col grow">
+                            <h2 class="text-lg font-semibold underline">Technology Oriented</h2>
+                            <p>Lorem amet ipsum dolor sit amet, consectetur amet adipisicing amet elit.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="">
+                <img class="h-[400px] w-[400px] lg:h-[500px] lg:w-[600px]" src="./assets/memories-bg.jpg" alt="">
+            </div>
         </div>
-    </div>
+    </section>
+
 
     <!-- view section -->
     <div class="my-8  flex flex-col">
         <div class="flex flex-col items-center">
-            <h1 class="text-3xl font-semibold">Our Expert Trainer</h1>
-            <span class="text-sm font-medium italic text-slate-500">Something to write here</span>
+            <h1 class="text-3xl font-semibold">Testimonials</h1>
+            <span class="text-sm font-medium italic text-slate-500">Teacher Saying about Hilltop Academy</span>
         </div>
         <div class="mt-2 flex flex-col lg:flex-row items-center justify-center">
             <div
                 class="mx-5 p-5 bg-slate-50 flex flex-col items-center w-60 text-justify hover:shadow-xl transition-all duration-300 border-0 rounded-lg">
-                <img src="assets/profile.jpg" class="border-0 rounded-md" alt="">
-                <h2 class="text-lg font-medium text-blueish_dark">Nathan Macken</h2>
-                <span>Sr. web designer</span>
+                <img src="assets/staffs/anil.jpg" class="border-0 rounded-md" alt="">
+                <h2 class="text-lg font-medium text-blueish_dark">Anil Thapa</h2>
+                <span>Resource Manager</span>
                 <p class="mt-3 text-slate-500 text-sm">If you are looking at blank cassettes on the web, you may be very
                     confused at the.</p>
                 <div class="mt-1 w-full flex justify-evenly text-slate-400 text-xs">
@@ -286,9 +375,9 @@
             </div>
             <div class="mx-5 p-5 bg-slate-50 flex flex-col items-center w-60 text-justify hover:shadow-xl
                 transition-all duration-300 border-0 rounded-lg">
-                <img src="assets/profile.jpg" class="border-0 rounded-md" alt="">
-                <h2 class="text-lg font-medium text-blueish_dark">Nathan Macken</h2>
-                <span>Sr. web designer</span>
+                <img src="assets/staffs/gobind-rawal.jpg" class="border-0 rounded-md" alt="">
+                <h2 class="text-lg font-medium text-blueish_dark">Govenda Rawel</h2>
+                <span>Discipline Incharge</span>
                 <p class="mt-3 text-slate-500 text-sm">If you are looking at blank cassettes on the web, you may be very
                     confused at the.</p>
                 <div class="mt-1 w-full flex justify-evenly text-slate-400 text-xs">
@@ -300,9 +389,9 @@
             </div>
             <div class="mx-5 p-5 bg-slate-50 flex flex-col items-center w-60 text-justify hover:shadow-xl
                 transition-all duration-300 border-0 rounded-lg">
-                <img src="assets/profile.jpg" class="border-0 rounded-md" alt="">
-                <h2 class="text-lg font-medium text-blueish_dark">Nathan Macken</h2>
-                <span>Sr. web designer</span>
+                <img src="assets/staffs/siddaraj-thapa.jpg" class="border-0 rounded-md" alt="">
+                <h2 class="text-lg font-medium text-blueish_dark">Siddha Raj Thapa</h2>
+                <span>Nepali Teacher</span>
                 <p class="mt-3 text-slate-500 text-sm">If you are looking at blank cassettes on the web, you may be very
                     confused at the.</p>
                 <div class="mt-1 w-full flex justify-evenly text-slate-400 text-xs">
@@ -314,9 +403,9 @@
             </div>
             <div class="mx-5 p-5 bg-slate-50 flex flex-col items-center w-60 text-justify hover:shadow-xl
                 transition-all duration-300 border-0 rounded-lg">
-                <img src="assets/profile.jpg" class="border-0 rounded-md" alt="">
-                <h2 class="text-lg font-medium text-blueish_dark">Nathan Macken</h2>
-                <span>Sr. web designer</span>
+                <img src="assets/staffs/malati.jpg" class="border-0 rounded-md" alt="">
+                <h2 class="text-lg font-medium text-blueish_dark">Malati bhandari</h2>
+                <span>Teacher</span>
                 <p class="mt-3 text-slate-500 text-sm">If you are looking at blank cassettes on the web, you may be
                     very
                     confused at the.</p>
