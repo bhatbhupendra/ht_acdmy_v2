@@ -644,9 +644,24 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-6{
@@ -743,6 +758,10 @@ video {
   height: 1.5rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-60{
   height: 15rem;
 }
@@ -791,6 +810,10 @@ video {
   max-height: 24rem;
 }
 
+.max-h-96{
+  max-height: 24rem;
+}
+
 .max-h-fit{
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -824,8 +847,36 @@ video {
   width: 1.5rem;
 }
 
+.w-40{
+  width: 10rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-40{
+  width: 10rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
 .w-60{
   width: 15rem;
+}
+
+.w-\[400px\]{
+  width: 400px;
+}
+
+.w-\[90px\]{
+  width: 90px;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .w-\[400px\]{
@@ -847,6 +898,7 @@ video {
 
 .w-full{
   width: 100%;
+}
 }
 
 .min-w-28{
@@ -883,6 +935,15 @@ video {
 
 .max-w-\[524px\]{
   max-width: 524px;
+}
+
+.max-w-fit{
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-lg{
+  max-width: 32rem;
 }
 
 .max-w-fit{
@@ -978,6 +1039,10 @@ video {
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-2\.5{
+  gap: 0.625rem;
 }
 
 .gap-2\.5{
@@ -1208,6 +1273,10 @@ video {
   padding: 1rem;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
 .p-5{
   padding: 1.25rem;
 }
@@ -1223,6 +1292,11 @@ video {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-3{
@@ -1243,6 +1317,11 @@ video {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-1{
@@ -1885,6 +1964,14 @@ video {
     padding: 2rem;
   }
 
+  .lg\:p-8{
+    padding: 2rem;
+  }
+
+  .lg\:p-8{
+    padding: 2rem;
+  }
+
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -1893,6 +1980,11 @@ video {
   .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:px-12{
