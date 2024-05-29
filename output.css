@@ -1114,6 +1114,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1162,6 +1166,11 @@ video {
 .bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-blue_light{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 246 255 / var(--tw-bg-opacity));
 }
 
 .bg-card_bg{
@@ -1289,6 +1298,10 @@ video {
   padding: 2rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1342,6 +1355,16 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-0{
@@ -1762,6 +1785,18 @@ video {
   opacity: 0.9;
 }
 
+.hover\:opacity-95:hover{
+  opacity: 0.95;
+}
+
+.hover\:opacity-85:hover{
+  opacity: 0.85;
+}
+
+.hover\:opacity-75:hover{
+  opacity: 0.75;
+}
+
 .hover\:shadow-xl:hover{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1914,6 +1949,10 @@ video {
 
   .lg\:w-\[600px\]{
     width: 600px;
+  }
+
+  .lg\:w-2\/6{
+    width: 33.333333%;
   }
 
   .lg\:max-w-\[536px\]{
