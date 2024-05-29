@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac02b855cd.js" crossorigin="anonymous"></script>
+    <title>Hilltop Academy</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="p-3 px-3 lg:px-16 flex bg-navbar_color justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-32 max-h-32" src="./assets/logo.png" alt="Logo">
+            <span class="text-lg font-medium font-display">Hilltop Academy</span>
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-semibold text-base hover:text-primary">Home</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Gallery</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Blog</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Courses</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">Contacts</a>
+            <a href="#" class="font-semibold text-base hover:text-primary">About</a>
+        </div>
+        <button
+            class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+            <span>Apply Online!!</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+        <div id="nav-dialog" class="hidden fixed z-10 lg:hidden inset-0 bg-white p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-12 max-h-12" src="./assets/logo.png" alt="Logo">
+                    <span class="text-lg font-medium font-display">Hilltop Academy</span>
+                </a>
+                <button class="p-2 lg:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Courses</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
+            </div>
+            <div class="h-[1px] bg-gray-300">
+                <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
+                    <span>Apply Online!!</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-p1 flex gap-4 mt-4 mb-4">
+        
+        <div class="container mx-auto">
+            <div class="bg-white rounded shadow">
+                <div class="border-b">
+                    <nav class="flex space-x-4 p-4" id="tabs">
+                        <a href="#tab-1" class="tab-link text-gray-600 py-2 px-4 block hover:text-blue-500 focus:outline-none border-b-2 font-medium">News 1</a>
+                        <a href="#tab-2" class="tab-link text-gray-600 py-2 px-4 block hover:text-blue-500 focus:outline-none border-b-2 font-medium">News 2</a>
+                        <a href="#tab-3" class="tab-link text-gray-600 py-2 px-4 block hover:text-blue-500 focus:outline-none border-b-2 font-medium">News 3</a>
+                    </nav>
+                </div>
+                <div id="tab-contents">
+                    <div id="tab-1" class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">News 1</h2>
+                        <p>Content for the first news tab...</p>
+                    </div>
+                    <div id="tab-2" class="hidden p-4">
+                        <h2 class="text-xl font-semibold mb-2">News 2</h2>
+                        <p>Content for the second news tab...</p>
+                    </div>
+                    <div id="tab-3" class="hidden p-4">
+                        <h2 class="text-xl font-semibold mb-2">News 3</h2>
+                        <p>Content for the third news tab...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const tabs = document.querySelectorAll('.tab-link');
+                const tabContents = document.querySelectorAll('#tab-contents > div');
+    
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = document.querySelector(tab.getAttribute('href'));
+    
+                        tabs.forEach(t => t.classList.remove('border-blue-500', 'text-blue-500'));
+                        tabContents.forEach(c => c.classList.add('hidden'));
+    
+                        tab.classList.add('border-blue-500', 'text-blue-500');
+                        target.classList.remove('hidden');
+                    });
+                });
+    
+                // Initialize the first tab as active
+                tabs[0].classList.add('border-blue-500', 'text-blue-500');
+                tabContents[0].classList.remove('hidden');
+            });
+        </script>
+
+
+    </section>
+
+        
+
+   
+
+    <!-- footer -->
+    <footer class="font-display px-10 py-4 bg-footer_bg flex items-center flex-col lg:flex-row justify-around">
+        <aside class="flex flex-col items-center text-blueish_dark">
+            <img class="object-cover max-w-48 max-h-48" src="./assets/logo.png" alt="Logo">
+            <span class="text-2xl font-semibold">Hilltop Academy</span>
+            <i>"Knowladge is the Power"</i>
+            <span>Estd: 2078</span>
+            <div class="min-w-28 flex justify-around text-slate-400 text-sm">
+                <a href="" class="hover:text-blue-700"><i class="fa-brands fa-facebook "></i></a>
+                <a href="" class="hover:text-pink-700"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="hover:text-red-700"><i class="fa-brands fa-youtube"></i></a>
+                <a href="" class="hover:text-blue-950"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </aside>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Contact</h1>
+            <span>Durgathali-2, Bajhang, Nepal</span>
+            <span>Email:- hilltop-academy@outlook.com</span>
+            <span>Phone:- +9779814637756</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Principal</h1>
+            <span>Janak Dhami</span>
+            <span>janakdhamieg@gmail.com</span>
+            <span>+977-9863943736</span>
+        </nav>
+        <nav class="pt-5 flex flex-col items-center lg:items-start">
+            <h1 class="text-xl font-medium text-blueish_dark">Links</h1>
+            <a href="" class="hover:underline">About us</a>
+            <a href="" class="hover:underline">Contact</a>
+            <a href="" class="hover:underline">Gallery</a>
+            <a href="" class="hover:underline">Sevices</a>
+        </nav>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
