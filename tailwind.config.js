@@ -4,6 +4,7 @@ module.exports = {
     "./home.html",
     "./gallary.html",
     "./blog.html",
+    "./course.html",
     "./contact.html",
     "./about.html",
   ],
