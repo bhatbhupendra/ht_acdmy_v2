@@ -11,23 +11,25 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="p-3 px-3 lg:px-16 flex bg-white justify-between items-center">
+    <nav class="p-2 px-3 lg:px-16 flex bg-navbar_color bg-opacity-95 justify-between items-center sticky top-0 z-50">
         <a href="#" id="brand" class="flex gap-2 items-center">
-            <img class="object-cover max-w-32 max-h-32" src="./assets/logo.png" alt="Logo">
+            <img class="object-cover max-w-28 max-h-28" src="./assets/logo.png" alt="Logo">
             <span class="text-lg font-medium font-display">Hilltop Academy</span>
         </a>
         <div id="nav-menu" class="hidden lg:flex gap-12">
-            <a href="#" class="font-semibold text-base hover:text-primary">Home</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">Gallery</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">Cources</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">Contacts</a>
-            <a href="#" class="font-semibold text-base hover:text-primary">About</a>
+            <a href="home.html" class="font-semibold text-base hover:text-primary">Home</a>
+            <a href="gallary.html" class="font-semibold text-base hover:text-primary">Gallery</a>
+            <a href="blog.html" class="font-semibold text-base hover:text-primary">Blog</a>
+            <a href="contact.html" class="font-semibold text-base hover:text-primary">Contacts</a>
+            <a href="about.html" class="font-semibold text-base hover:text-primary">About</a>
         </div>
-        <button
-            class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-            <span>Apply Online!!</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <a href="form.html">
+            <button
+                class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <span>Apply Online!!</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a>
         <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
@@ -42,17 +44,19 @@
                 </button>
             </div>
             <div>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Cources</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
+                <a href="home.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Home</a>
+                <a href="gallary.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Gallery</a>
+                <a href="blog.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blog</a>
+                <a href="contact.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Contacts</a>
+                <a href="about.html" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">About</a>
             </div>
             <div class="h-[1px] bg-gray-300">
-                <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
-                    <span>Apply Online!!</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                <a href="form.html">
+                    <button class="mt-6 w-full flex gap-2 items-center px-6 py-2 rounded-lg hover:bg-gray-50">
+                        <span>Apply Online!!</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
@@ -160,42 +164,60 @@
         </div>
     </div>
 
-    <!-- Footer -->
-
     <!-- footer -->
-    <footer class="font-display px-10 py-4 bg-footer_bg flex items-center flex-col lg:flex-row justify-around">
-        <aside class="flex flex-col items-center text-blueish_dark">
-            <img class="object-cover max-w-48 max-h-48" src="./assets/logo.png" alt="Logo">
-            <span class="text-2xl font-semibold">Hilltop Academy</span>
-            <i>"Knowladge is the Power"</i>
-            <span>Estd: 2078</span>
-            <div class="min-w-28 flex justify-around text-slate-400 text-sm">
-                <a href="" class="hover:text-blue-700"><i class="fa-brands fa-facebook "></i></a>
-                <a href="" class="hover:text-pink-700"><i class="fa-brands fa-instagram"></i></a>
-                <a href="" class="hover:text-red-700"><i class="fa-brands fa-youtube"></i></a>
-                <a href="" class="hover:text-blue-950"><i class="fa-brands fa-tiktok"></i></a>
+    <section class="mt-10 lg:px-44 pt-8 bg-gray-100">
+        <div class="flex flex-col">
+            <div class="flex flex-row justify-between gap-5">
+                <div class="flex flex-col items-center gap-1">
+                    <img class="object-cover max-w-48 max-h-48" src="./assets/logo.png" alt="Logo">
+                    <h2 class="font-bold text-2xl text-blue-950">Hilltop Academy</h2>
+                    <p class="font-medium text-base italic">"Knowladge is the Power"</p>
+                    <p class="font-medium text-xs">Estd: 2078</p>
+                    <div class="flex flex-row text-gray-600 gap-5">
+                        <a class="hover:text-pink-600" href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a class="hover:text-blue-600" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a class="hover:text-sky-600" href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a class="hover:text-red-600" href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h3 class="font-semibold text-xl text-blue-950">Contact</h3>
+                    <span class="font-normal text-base text-gray-900">Durgathali-2, Bajhang</span>
+                    <span class="font-normal text-base text-gray-900">hilltop-academy@outlook.com</span>
+                    <span class="font-normal text-base text-gray-900">+977-9814637756</span>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h3 class="font-semibold text-xl text-blue-950">Pages</h3>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">Contact Us</span></a>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">About Us</span></a>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">Blog</span></a>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">News & Events</span></a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h3 class="font-semibold text-xl text-blue-950">Resources</h3>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">Curriculum</span></a>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">Textbooks</span></a>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">Teacher's Guide</span></a>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">Policies & Guidelines</span></a>
+                    <a href=""><span class="font-normal text-base text-gray-900 hover:underline">Reports</span></a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h3 class="font-semibold text-xl text-blue-950">Join Our Newsletter</h3>
+                    <div class="subscribe">
+                        <input class="h-[40px] w-[180px] bg-blue-100 pl-[20px] text-blue-950 font-semibold text-base" type="text" placeholder="Your email Address">
+                        <button class="bg-blue-950 text-white px-5 py-2">Subscribe</button>
+                    </div>
+                    <p class="text-sm">* Will send you weekly updates for your better <br>
+                        finance management.
+                    </p>
+                </div>
             </div>
-        </aside>
-        <nav class="pt-5 flex flex-col items-center lg:items-start">
-            <h1 class="text-xl font-medium text-blueish_dark">Contact</h1>
-            <span>Durgathali-2, Bajhang, Nepal</span>
-            <span>Email:- hilltop-academy@outlook.com</span>
-            <span>Phone:- +9779814637756</span>
-        </nav>
-        <nav class="pt-5 flex flex-col items-center lg:items-start">
-            <h1 class="text-xl font-medium text-blueish_dark">Principal</h1>
-            <span>Janak Dhami</span>
-            <span>janakdhamieg@gmail.com</span>
-            <span>+977-9863943736</span>
-        </nav>
-        <nav class="pt-5 flex flex-col items-center lg:items-start">
-            <h1 class="text-xl font-medium text-blueish_dark">Links</h1>
-            <a href="" class="hover:underline">About us</a>
-            <a href="" class="hover:underline">Contact</a>
-            <a href="" class="hover:underline">Gallery</a>
-            <a href="" class="hover:underline">Sevices</a>
-        </nav>
-    </footer>
+            <div class="flex flex-col items-center border-t border-solid border-gray-900 font-normal mt-5 py-4 text-blue-950">
+                <h5>Copyright @HilltopAcademy 2078. All Rights Reserved.</h5>
+            </div>
+        </div>
+    </section>
+    
 
 
 </body>
