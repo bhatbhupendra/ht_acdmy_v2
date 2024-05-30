@@ -797,8 +797,16 @@ video {
   height: 400px;
 }
 
+.h-\[52px\]{
+  height: 52px;
+}
+
 .h-full{
   height: 100%;
+}
+
+.h-\[40px\]{
+  height: 40px;
 }
 
 .max-h-12{
@@ -866,6 +874,10 @@ video {
   width: 15rem;
 }
 
+.w-\[250px\]{
+  width: 250px;
+}
+
 .w-\[400px\]{
   width: 400px;
 }
@@ -885,6 +897,14 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[180px\]{
+  width: 180px;
 }
 
 .min-w-28{
@@ -1038,6 +1058,10 @@ video {
   gap: 1.75rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-x-7{
   -moz-column-gap: 1.75rem;
        column-gap: 1.75rem;
@@ -1107,6 +1131,14 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-t-2{
+  border-top-width: 2px;
+}
+
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-solid{
   border-style: solid;
 }
@@ -1148,6 +1180,11 @@ video {
 .bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-blue-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
 }
 
 .bg-card_bg{
@@ -1208,6 +1245,11 @@ video {
 .bg-yellow-400{
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.bg-blue-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40{
@@ -1316,19 +1358,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .pb-0{
@@ -1363,6 +1402,10 @@ video {
   padding-left: 1.25rem;
 }
 
+.pl-\[20px\]{
+  padding-left: 20px;
+}
+
 .pr-10{
   padding-right: 2.5rem;
 }
@@ -1381,6 +1424,14 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-center{
@@ -2007,6 +2058,11 @@ video {
   .lg\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+
+  .lg\:px-44{
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 
   .lg\:pb-0{
