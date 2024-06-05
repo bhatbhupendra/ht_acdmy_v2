@@ -2028,29 +2028,14 @@ video {
     padding-right: 4rem;
   }
 
-  .lg\:px-36{
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .lg\:px-40{
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .lg\:px-44{
-    padding-left: 11rem;
-    padding-right: 11rem;
-  }
-
-  .lg\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:px-36{
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 
   .lg\:pb-0{
