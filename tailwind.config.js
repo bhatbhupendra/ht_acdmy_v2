@@ -28,6 +28,9 @@ module.exports = {
         body: ["Inter", "sans-serif"],
         gallaryTitle: ["Rock Salt", "sans-serif"],
       },
+      bannerImg:{
+        banner:"url"
+      }
     },
   },
   plugins: [],
