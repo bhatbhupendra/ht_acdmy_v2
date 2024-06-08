@@ -1042,10 +1042,6 @@ video {
   gap: 1.75rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-x-7{
   -moz-column-gap: 1.75rem;
        column-gap: 1.75rem;
@@ -1309,6 +1305,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1352,11 +1353,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pb-0{
@@ -2089,6 +2085,11 @@ video {
     padding-right: 5rem;
   }
 
+  .lg\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .lg\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
@@ -2097,11 +2098,6 @@ video {
   .lg\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 
   .lg\:py-2{
